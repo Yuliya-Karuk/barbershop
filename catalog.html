@@ -42,28 +42,57 @@
             </ul>
 
             <section class="filter">
-                <ul>
-                    <li>
-                        <h2>Производители</h2>
+
+                <form action="https://echo.htmlacademy.ru" method="get">
+                    <fieldset>
+                        <legend>Производители</legend>
                         <ul>
-                            <li>Baxter of California</li>
-                            <li>Mr Natty</li>
-                            <li>Suavecito</li>
-                            <li>Malin+Goetz</li>
-                            <li>Murray’s</li>
-                            <li>American Crew</li>
+                            <li>
+                                <input type="checkbox" id="filter-baxter-of-california" name="baxter-of-california" checked>
+                                <label for="filter-baxter-of-california">Baxter of California</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="filter-mr-natty" name="mr-natty">
+                                <label for="filter-mr-natty">Mr Natty</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="filter-suavecito" name="suavecito">
+                                <label for="filter-suavecito">Suavecito</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="filter-malin-goetz" name="malin-goetz">
+                                <label for="filter-malin-goetz">Malin+Goetz</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="filter-murray" name="murray">
+                                <label for="filter-murray">Murray’s</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="filter-american-crew" name="american-crew">
+                                <label for="filter-american-crew">American Crew</label>
+                            </li>
                         </ul>
-                    </li>
-                    <li>
-                        <h2>Группы товаров</h2>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Группы товаров</legend>
                         <ul>
-                            <li>Бритвенные принадлежности</li>
-                            <li>Средства для ухода</li>
-                            <li>Аксессуары</li>
+                            <li>
+                                <input type="radio" id="filter-shaving" name="product-group" value="shaving-products" checked>
+                                <label for="filter-shaving">Бритвенные принадлежности</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="filter-care" name="product-group" value="care-products">
+                                <label for="filter-care">Средства для ухода</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="filter-accessories" name="product-group" value="accessories">
+                                <label for="filter-accessories">Аксессуары</label>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
-                <button type="button">Показать</button>
+                    </fieldset>
+                    <button type="submit">Показать</button>
+                </form>
+                
             </section>
 
             <section class="product-list">
