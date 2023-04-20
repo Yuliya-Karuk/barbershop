@@ -16,7 +16,7 @@
             </a>
             <div class="main-navigation-wrapper">
                 <div class="container">
-                    <ul class="navigation-links">
+                    <ul class="site-navigation">
                         <li><a href="blank.html">Информация</a></li>
                         <li><a href="blank.html">Новости</a></li>
                         <li><a href="price.html">Прайс-лист</a></li>
@@ -192,34 +192,37 @@
         </div>
     </footer>
     
-    <section class="modal">
+    <section class="modal modal-login">
         <h2>Личный кабинет</h2>
-        <p>Введите, пожалуйста, свой логин и пароль.</p>
+        <p class="modal-description">Введите, пожалуйста, свой логин и пароль.</p>
         <form class="login-form" action="https://echo.htmlacademu.ru" method="post">
             <ul class="login-list">
                 <li>
                     <label class="visually-hidden" for="login-login">Логин</label>
-                    <input class="login-icon-user" id="login-login" type="email" name="login"
-                        placeholder="email@example.com">
+                    <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com">
                 </li>
                 <li>
                     <label class="visually-hidden" for="login-password">Пароль</label>
-                    <input class="login-icon-password" id="login-password" type="password" name="password"
-                        placeholder="********">
+                    <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="********">
                 </li>
             </ul>
-            <input id="input-remeber" type="checkbox" name="remember">
-            <label for="input-remeber">Запомните меня</label>
-            <a class="restore" href="#">Я забыл пароль</a>
+            <div class="login-password-info">
+                <input class="visually-hidden input-remember-checkbox" id="input-remeber" type="checkbox" name="remember">
+                <label for="input-remeber">Запомните меня</label>
+                <a class="restore" href="#">Я забыл пароль</a>
+            </div>
             <button class="button" type="submit">Войти</button>
         </form>
-        <button type="button">Закрыть</button>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
     
-    <section class="modal">
+    <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться?</h2>
-        <!--здесь будет карта-->
-        <button type="button">Закрыть</button>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991032728616!2d30.3230833!3d59.9387942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1681974028926!5m2!1sru!2sby"
+            width="766" height="560" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Офис компании пл адресу ул. Большая Коношенная, д. 19/8, г. Санкт-Петербург"></iframe>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
 
 </body>
